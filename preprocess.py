@@ -1,6 +1,8 @@
 import pandas as pd
 import gdown
 import csv
+import chardet
+import sys
 from sklearn.model_selection import train_test_split
 
 def load_and_preprocess_data():
