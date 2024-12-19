@@ -11,6 +11,7 @@ def main():
     text_train, text_val = load_and_preprocess_data()
     
     max_seq_len = 50
+    batch_size = 32
 
     tokenizer,model = load_model_and_tokenizer(model_name="openai-community/gpt2")
     train_dataset = DataHandler(text_train["text"], max_seq_len, tokenizer)
